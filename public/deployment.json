@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 4,
+  "chainId": 11155111,
+  "rpcUrl": "https://ethereum-sepolia-rpc.publicnode.com",
+  "explorer": "https://sepolia.etherscan.io",
+  "wrapper": "0x195f15F2d49d693cE265b4fB0fdDbE15b1850Cc1",
+  "potAddress": "0x73da00df8c64c49a91892e263f52538323bc7ecf",
+  "swapRouter": "0x3bFA4769FB09eefC5a80d6E87c3B9C650f7Ae48E",
+  "weth": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+  "quoter": "0xEd1f6473345F45b75F8179591dd5bA1888cf2FB3",
+  "game": null,
+  "oracle": null,
+  "converter": null,
+  "token": null,
+  "pool": null,
+  "poolFee": null,
+  "tokenDecimals": null,
+  "tokenSymbol": "NFLX",
+  "imageBaseURI": null,
+  "mintPrice": "0.001",
+  "status": "awaiting_nflx_pool_and_funded_wallet",
+  "luckModel": "share_cap_2x"
+}

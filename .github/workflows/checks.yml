@@ -1,0 +1,25 @@
+name: Checks
+on: [push, pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: stable
+      - run: npm ci
+      - run: forge test -vv
+      - run: node scripts/export-contracts.mjs
+      - run: git diff --exit-code -- public/contracts
+      - run: npm run test:math
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run dev > /tmp/squid-grid-vite.log 2>&1 & node scripts/wait-server.mjs
+      - run: npm run test:browser

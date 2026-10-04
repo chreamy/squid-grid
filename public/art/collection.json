@@ -1,0 +1,7 @@
+{
+  "supply": 1000,
+  "variant": "Outfit number only",
+  "base": "prisoner-base.webp",
+  "baseSha256": "2d56314978b672ecdc603b71046f07b260c52cf920e5cd4643afe8bfc5f6b00b",
+  "images": "../nft/{1..1000}.svg"
+}

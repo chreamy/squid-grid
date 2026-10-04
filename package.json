@@ -1,0 +1,32 @@
+{
+  "name": "squid-grid",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "forge test -vv",
+    "test:math": "node --test test/math.test.mjs",
+    "contracts:build": "forge build && node scripts/export-contracts.mjs",
+    "deploy:testnet": "node scripts/deploy.mjs",
+    "keeper": "node scripts/keeper.mjs",
+    "wallet:create": "node scripts/create-wallet.mjs",
+    "test:browser": "node scripts/browser-qa.mjs",
+    "art:build": "node scripts/build-art.mjs",
+    "format": "prettier --write src scripts test/*.mjs package.json index.html README.md"
+  },
+  "dependencies": {
+    "ethers": "6.17.0",
+    "lucide-react": "0.468.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.7.0",
+    "playwright": "1.56.1",
+    "prettier": "3.6.2",
+    "vite": "6.4.3"
+  }
+}
