@@ -963,7 +963,7 @@ export default function App() {
               <p>
                 {alive === 2 && round > 0
                   ? "Final-round odds are locked. New deposits cannot affect the final draw."
-                  : "Buy protection, never immunity. Every living Player stays in the game."}
+                  : "Buy protection, never immunity. Every Player still has a chance."}
               </p>
               <label htmlFor="amount">PROTECTION DEPOSIT</label>
               <div className="amount-input">

@@ -16,7 +16,7 @@
   "poolFee": null,
   "tokenDecimals": null,
   "tokenSymbol": "NFLX",
-  "imageBaseURI": null,
+  "imageBaseURI": "https://raw.githubusercontent.com/chreamy/squid-grid/29e08104ce88a38bc8d7967660a025f5ef749377/public/nft/",
   "mintPrice": "0.001",
   "status": "awaiting_nflx_pool_and_funded_wallet",
   "luckModel": "share_cap_2x"

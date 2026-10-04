@@ -37,7 +37,7 @@ The cap prevents immunity; it does not make spending irrelevant. In a 1,000-Play
 Node 20.11+ and Foundry are required.
 
 ```sh
-git clone --recurse-submodules <repository-url>
+git clone --recurse-submodules https://github.com/chreamy/squid-grid.git
 cd squid-grid
 npm ci
 forge build
@@ -100,7 +100,7 @@ Contract verification must be performed after actual deployment, with the exact 
 
 `public/nft/1.svg` through `1000.svg` are self-contained images. The base character is identical; only the chest number changes. `npm run art:build` reproduces them with vector pixel digits. Their metadata is generated onchain and includes status, elimination round and finishing position. The inspector adds a death-round stamp.
 
-Upload the collection to a publicly reachable, preferably content-addressed directory before deployment, and set NFT_BASE_URI to its trailing-slash URI. A private preview website is not a suitable public NFT image host. The base URI is fixed after construction.
+The default preview configuration points to the collection at a pinned source commit on GitHub. You can instead upload it to IPFS and set NFT_BASE_URI to its trailing-slash URI before deployment. A private preview website is not a suitable public NFT image host. The base URI is fixed after construction.
 
 ## Architecture and operating limits
 

@@ -5,6 +5,7 @@ out = "out"
 libs = ["vendor"]
 solc_version = "0.8.28"
 evm_version = "cancun"
+auto_detect_remappings = false
 optimizer = true
 optimizer_runs = 200
 remappings = ["openzeppelin-contracts/=vendor/openzeppelin/contracts/", "forge-std/=vendor/openzeppelin/lib/forge-std/src/"]
